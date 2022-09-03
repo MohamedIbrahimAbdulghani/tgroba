@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+p {
+	color: grey;
+}
+
+#heading {
+	text-transform: uppercase;
+	color: #ffc700;
+	font-weight: normal;
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+.numbers {
+    width: 130px !important;
+    padding: 8px 0px 8px 4px;
+    font-size: 12.5px;
+}
+.form-card {
+	text-align: left;
+}
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+#msform input, #msform textarea {
+    padding: 8px 15px 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    /* background-color: #ECEFF1; */
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.col {
+    margin-bottom: -10px !important;
+}
+#msform input:focus, #msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ffc700;
+    outline-width: 0;
+}
+
+/*Next Buttons*/
+#msform .action-button {
+    width: 100px;
+    background: #ffc700;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+}
+
+#msform .action-button:hover, #msform .action-button:focus {
+    background-color: #ffc700;
+}
+
+/*Previous Buttons*/
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right;
+}
+
+#msform .action-button-previous:hover, #msform .action-button-previous:focus {
+    background-color: #000000;
+}
+
+/*The background card*/
+.card {
+    z-index: 0;
+    border: none;
+    position: relative;
+}
+
+/*FieldSet headings*/
+.fs-title {
+    font-size: 25px;
+    color: #ffc700;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.purple-text {
+	color: #ffc700;
+    font-weight: normal;
+}
+
+/*Step Count*/
+.steps {
+	font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right;
+}
+
+/*Field names*/
+.fieldlabels {
+	color: gray;
+	text-align: left;
+}
+
+/*Icon progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey;
+}
+
+#progressbar .active {
+    color: #ffc700;
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+}
+
+/*Icons in the ProgressBar*/
+#progressbar #account:before {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    content: "1";
+}
+
+#progressbar #personal:before {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    content: "2";
+}
+
+#progressbar #payment:before {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    content: "3";
+}
+
+#progressbar #confirm:before {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    content: "4";
+}
+
+/*Icon ProgressBar before any progress*/
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+}
+
+/*ProgressBar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1;
+}
+
+/*Color number of the step and the connector before it*/
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #ffc700;
+}
+
+/*Animated Progress Bar*/
+.progress {
+	height: 20px;
+}
+
+.progress-bar {
+	background-color: #ffc700;
+}
+
+/*Fit image in bootstrap div*/
+.fit-image{
+    width: 100%;
+    object-fit: cover;
+}
+.first{
+    /* margin-left: -71%; */
+
+}
+.justify-content-center {
+    justify-content: start!important;
+}
+.btn1{
+    width: 100%;
+    height: 40px;
+    margin-top: 13%; 
+}
+.btn2{
+    width: 100%;
+    height: 40px;
+    background-color:#ffc700;
+    margin-top: 5%;
+    border:none;
+}
+.cards{
+    width: 100%;
+    height: auto;
+    border-style: solid;
+    border-width: thin;
+    margin-top: 5%;
+}
+.parent{
+    position: relative;
+}
+.parent::before{
+    content: "";
+    position: absolute;
+    top: -309px;
+    left: 5%;
+    width: 2px;
+    height: 219%;
+    background-color: #ffc700;
+}
+.cardd {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.two, 
+.three, 
+.four {
+    width: 25%;
+}
+.two {
+    margin-left: 15px;
+}
+.cardd {
+    height: 147px;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  margin-left: 3%;
+}
+.firstt {
+    background-color: #ffc700;
+    color: white;
+    padding: 15px;
+    border-top-right-radius: 115px;
+}
+.firstt span {
+    display: block;
+}
+.prim{
+    padding: 5%;
+    position: relative;
+    top: 7%;
+}
+.finsh-img {
+    width: 43%;
+    margin-top: -71px;
+}
